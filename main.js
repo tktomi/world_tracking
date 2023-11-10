@@ -1,9 +1,5 @@
 import * as THREE from './libs/three.js-r132/build/three.module.js';
 import { ARButton } from './libs/three.js-r132/examples/jsm/webxr/ARButton.js';
-import { loadGLTF } from './libs/loader.js';
-const THREE = window.MINDAR.IMAGE.THREE;
-
-const { renderer, scene, camera } = mindarThree;
 
 document.addEventListener('DOMContentLoaded', () => {
   const initialize = async () => {
@@ -39,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
       mesh.scale.y = Math.random() * 2 + 1;
       scene.add(mesh);
     });
-
 
     renderer.xr.addEventListener("sessionstart", async (e) => {
       const session = renderer.xr.getSession();
