@@ -1,6 +1,6 @@
 import * as THREE from './libs/three.js-r132/build/three.module.js';
 import { ARButton } from './libs/three.js-r132/examples/jsm/webxr/ARButton.js';
-// import { loadGLTF } from './libs/loader.js';
+import { loadGLTF } from './libs/loader.js';
 const THREE = window.MINDAR.IMAGE.THREE;
 
 const { renderer, scene, camera } = mindarThree;
